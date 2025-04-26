@@ -15,20 +15,20 @@
         function ChatInput (){
           return (
             <>
-              <input />
+              <input  placeholder  = "Send a message to Chatbot" size = "30" />
               <button>Send</button>
             </>
           );
         }
 
-        const div = (
+        const app = (
               <>
                 <ChatInput />
               </>
             );
 
       const container = document.querySelector('.js-container');
-      ReactDOM.createRoot(container).render(div);
+      ReactDOM.createRoot(container).render(app);
     </script>
     <script src="./chatbot.js"></script>
   </body>
