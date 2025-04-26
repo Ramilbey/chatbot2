@@ -21,8 +21,10 @@
           );
         }
 
-        function ChatMessage(props){
-          const {message, sender} = props;
+        function ChatMessage({message, sender}){
+          //const message = props.message;
+          //const sender = props.sender;
+          // const {message, sender} = props //destructuring
           
           if(sender === 'robot'){
             return (
