@@ -22,7 +22,7 @@
             </>
           );
         }
-
+ 
         function ChatMessage({message, sender}){
           //const message = props.message;
           //const sender = props.sender;
@@ -51,53 +51,33 @@
         }
 
         function App(){
-          const ChatMessages = [
-            {
+          const ChatMessages = [{
               message: "Hello chatbot",
               sender: "user"
-            },
-            {
+            },{
               message: "Hello, how can I help you?",
               sender: "robot"
-            },
-            {
+            },{
               message: "Can you get me todays date?",
               sender: "user"
-            },
-            {
+            },{
               message: "Today is April 26",
               sender: "robot"
 
             }
           ];
-          const chatMessageComponents = ChatMessages.map(()=>{
-            return (
-              <ChatMessage
-                message ={ChatMessage.message} 
-                sender = {ChatMessage.sender}
-              />
-            )
-          });
           
           return(
             <>
               <ChatInput />
-              <ChatMessage 
-                message = "Hello chatbot" 
-                sender = "user" 
-              /> 
-              <ChatMessage 
-                message = "Hello, how can I help you?" 
-                sender = "robot"
-              /> 
-              <ChatMessage 
-                message = "Can you get me todays date?" 
-                sender = "user"
-              /> 
-              <ChatMessage 
-                message = "Today is April 26" 
-                sender = "robot"
-              /> 
+              {ChatMessages.map((ChatMessage)=>{
+                return (
+                  <ChatMessage
+                    message ={ChatMessage.message} 
+                    sender = {ChatMessage.sender}
+                  />
+                )})
+              }
             </>
           )
         }
