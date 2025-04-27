@@ -75,7 +75,12 @@
 
           function sendMessage(){
             setChatMessages(
-              ...chatMessages
+              ...chatMessages,
+              {
+                message: 'text',
+                sender: 'user',
+                id: crypto.randomUUID()
+              }
             )
           }
 
