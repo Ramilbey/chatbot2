@@ -67,9 +67,17 @@
             {
               message: "Today is April 26",
               sender: "robot"
-              
+
             }
-          ]
+          ];
+          ChatMessages.map(()=>{
+            return (
+              <ChatMessage
+                message ={ChatMessage.message} 
+                sender = {ChatMessage.sender}
+              />
+            )
+          })
           return(
             <>
               <ChatInput />
