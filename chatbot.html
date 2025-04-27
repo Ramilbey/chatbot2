@@ -71,7 +71,11 @@
           ];
           
           function sendMessage(){
-            console.log("send message")
+            chatMessages.push({
+              message: 'text',
+              sender: 'user',
+              id: crypto.randomUUID()
+            })
           }
 
           return (
