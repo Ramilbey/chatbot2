@@ -67,12 +67,16 @@
               message: "Today is April 26",
               sender: "robot",
               id: "id4"
-
             }
           ];
+          
+          function sendMessage(){
+            console.log("send message")
+          }
 
           return (
             <>
+              <button onClick={sendMessage}>send message</button>
               {chatMessages.map((ChatMessage)=>{
                 return (
                   <ChatMessage
@@ -83,7 +87,7 @@
                 )})
               }
             </>
-          )
+          );
 
         }
 
@@ -91,7 +95,7 @@
           return(
             <>
               <ChatInput />
-              <chatMessages />
+              <ChatMessages />
             </>
           )
         }
