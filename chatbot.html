@@ -70,14 +70,15 @@
 
             }
           ];
-          ChatMessages.map(()=>{
+          const chatMessageComponents = ChatMessages.map(()=>{
             return (
               <ChatMessage
                 message ={ChatMessage.message} 
                 sender = {ChatMessage.sender}
               />
             )
-          })
+          });
+          
           return(
             <>
               <ChatInput />
