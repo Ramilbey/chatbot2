@@ -5,6 +5,8 @@
     <style>
       body{
         font-family: Arial;
+        margin-top: 0px;
+        margin-bottom: 0px;
       }
       .send-button{
         background-color: rgb(25, 135, 84);
@@ -23,13 +25,17 @@
         font-size: 15px;
         flex-grow: 1;
       }
-      .chat-container{
+      .chat-input-container{
         display: flex;
+        margin-bottom: 60px;
       }
       .app-container{
         max-width: 600px;
         margin-left: auto;
         margin-right: auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
       }
       .chat-message-user{
         display: flex;
@@ -50,6 +56,16 @@
         margin-left: 10px;
         margin-bottom: 20px;
         max-width: 300px;
+      }
+      .chat-message-profile{
+        width: 45px;
+      }
+      .chat-messages-container{
+        flex-grow: 1;
+        margin-top: 20 px;
+        overflow: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
       }
     </style>
   </head>
@@ -92,7 +108,7 @@
             setInputText('');
           }
           return (
-            <div className = "chat-container">
+            <div className = "chat-input-container">
               <input 
               className = "chat-input" 
               placeholder ="Send a message to Chatbot"
@@ -130,13 +146,15 @@
               : 'chat-message-robot'
             }>
               {sender === 'robot' && (
-                <img src = "robot.png" width = "50" />
+                <img src = "robot.png"
+                className = "chat-message-profile " />
               )}
               <div className = "chat-message-text" >
                 {message}
               </div>
               {sender === 'user' && (
-                <img src= "user.png" width = "50"/>
+                <img src= "user.png"
+                className = "chat-message-profile"/>
               )}
             </div>
 
@@ -145,7 +163,7 @@
 
         function ChatMessages({chatMessages}){
           return (
-            <>
+            <div className = "chat-messages-container">
               {chatMessages.map((chatMessage)=>{
                 return (
                   <ChatMessage
@@ -155,7 +173,7 @@
                   />
                 );
               })}
-            </>
+            </div>
           );
 
         }
@@ -184,13 +202,14 @@
           // const setChatMessages = array[1];
           return(
             <div className ="app-container">
+              
+              <ChatMessages 
+                chatMessages ={chatMessages}
+              />
               <ChatInput 
                 chatMessages = {chatMessages}
                 setChatMessages = {setChatMessages}
                />
-              <ChatMessages 
-                chatMessages ={chatMessages}
-              />
             </div>
           );
         }
