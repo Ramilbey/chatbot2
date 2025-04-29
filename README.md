@@ -21,6 +21,14 @@ It shows a basic conversation between a **user** and a **robot**, including imag
 15. Lifting State Up: Sharing state between components.
 16. Making the <ChatInput> component interactive.
 17. Getting automatic chatbot responses.
+18. CSS with React
+19. Style the ChatBot Project
+20. Flexbox = create flexible layout
+21. Ternary Operator (?:) = if-else statement directly in the JSX
+22. Hooks = insert React features into a component
+23. userEffect = run code after component is created or updated
+24. useRef = save an HTML element from the component
+25. Created the auto-scroll feature
 
 ## Features
 - User and Robot messages displayed side-by-side with avatars.
