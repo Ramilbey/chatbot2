@@ -62,7 +62,7 @@
       }
       .chat-messages-container{
         flex-grow: 1;
-        margin-top: 20 px;
+        margin-top: 20px;
         overflow: scroll;
         scrollbar-width: none;
         -ms-overflow-style: none;
@@ -110,15 +110,15 @@
           return (
             <div className = "chat-input-container">
               <input 
-              className = "chat-input" 
               placeholder ="Send a message to Chatbot"
               size = "30"
               onChange ={saveInputText}
               value = {inputText}
+              className = "chat-input"
               />
               <button
-              className = "send-button"
               onClick = {sendMessage} 
+              className = "send-button"
               >Send</button>
             </div>
           );
@@ -141,7 +141,7 @@
           */
           return (
             <div className = {
-              sender  === "sender" 
+              sender  === "user" 
               ? 'chat-message-user'
               : 'chat-message-robot'
             }>
