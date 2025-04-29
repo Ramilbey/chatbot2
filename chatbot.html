@@ -13,6 +13,12 @@
         font-size: 15px;
         cursor: pointer;
       }
+      .chat-input{
+        padding: 12px 15px;
+        border-radius: 10px;
+        border-width: 1px;
+        font-size: 15px;
+      }
     </style>
   </head>
   <body>
@@ -55,7 +61,8 @@
           }
           return (
             <>
-              <input  
+              <input 
+              className = "chat-input" 
               placeholder ="Send a message to Chatbot"
               size = "30"
               onChange ={saveInputText}
