@@ -3,7 +3,7 @@
   <head>
     <title>ChatBot</title>
     <style>
-      button{
+      .send-button{
         background-color: green;
       }
     </style>
@@ -55,6 +55,7 @@
               value = {inputText}
               />
               <button
+              className = "send-button"
               onClick = {sendMessage} 
               >Send</button>
             </>
