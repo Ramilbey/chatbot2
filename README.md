@@ -29,7 +29,15 @@ It shows a basic conversation between a **user** and a **robot**, including imag
 23. userEffect = run code after component is created or updated
 24. useRef = save an HTML element from the component
 25. Created the auto-scroll feature
-
+26. Proper React Setup (using command line, npm and Vite)
+27. Command Line = give commands to our computer
+28. NPM = download and use external libraries (or packages)
+29. creat-vite Packaga - helps us create a Proper React SetUp
+30. Moved our Chatbot Project into the new React Setup
+31. ESLint = highlights problems in our JavaScript code
+32. JavaScript Modules = seperate our code into different file
+33. Seperate each compoenet into its own .jsx and .css files
+    
 ## Features
 - User and Robot messages displayed side-by-side with avatars.
 - Chat input field with placeholder text and a send button.
