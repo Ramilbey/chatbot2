@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 
 function ChatInput ({chatMessages, setChatMessages}){
-  const [inputText, setInputText] = React.useState('');
+  const [inputText, setInputText] = useState('');
   function saveInputText(event){
     setInputText(event.target.value);
   }
