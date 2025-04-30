@@ -1,5 +1,5 @@
-import { useState,useRef, useEffect } from 'react'
-import { Chatbot } from 'supersimpledev';
+import { useState, useRef, useEffect } from 'react'
+import {ChatInput} from './components/ChatInput'
 import RobotProfileImage from './assets/robot.png'
 import UserProfileImage from './assets/user.png'
 import './App.css'
