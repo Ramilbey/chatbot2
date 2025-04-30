@@ -47,3 +47,4 @@ It shows a basic conversation between a **user** and a **robot**, including imag
 - **Components** are built for input, individual messages, and the whole message list.
 - **Array spread `...` operator** is used to append new messages.
 - **Conditional Rendering** is used to show different avatars (`user` and `robot`).
+
