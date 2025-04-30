@@ -4,9 +4,6 @@ import { ChatMessage } from './components/ChatMessage';
 import ChatMessages from './components/ChatMessages';
 import './App.css'
 
-
-
-
 function App(){
   // Array Destructuring
   const [chatMessages, setChatMessages] = useState([{
